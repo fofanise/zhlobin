@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<title>Жлобин</title>
+		<!-- links -->
+		<link type="image/png" sizes="16x16" rel="icon" href="images/Web/icons8-favorite-windows-11-color-16.png">
+		<link type="image/png" sizes="32x32" rel="icon" href="images/Web/icons8-favorite-windows-11-color-32.png">
+		<link type="image/png" sizes="96x96" rel="icon" href="images/Web/icons8-favorite-windows-11-color-96.png">
+		<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		<!-- scripts -->
+		<script src="https://kit.fontawesome.com/6fe63ae194.js"></script>
+		<script src="anime.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	</head>
+
+	<body>
+		<section id="page-container">
+			<!-- start-page -->
+			<section class="bg-zh">
+				<nav class="navbar">
+					<div class="container">
+						<div class="navbar__wrap">
+							<div class="hamb">
+								<div class="hamb__field" id="hamb"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </div>
+							</div> <img src="images/zhlad.png" alt="" class="logo">
+							<ul class="menu" id="menu">
+								<li><a href="bmz.html">БМЗ</a></li>
+								<li><a href="museum.html">Музей</a></li>
+								<li><a href="cor.html">Ледовый дворец</a></li>
+								<li><a href="usadba.html">Усадьба</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="popup" id="popup"></div>
+				<!-- greeting  -->
+				<section id="page-hero" @touchstart="touchstart" @touchend="touchend">
+					<div class="head-site-inner">
+						<h1 id="love" class="heading h-01">Я <i class="fas fa-heart"></i> жлобин</h1>
+						<section id="example" class="sub-header copy-02"> Пульс города на Днепре </section>
+					</div>
+				</section>
+			</section>
+			<!-- about us -->
+			<section id="page-about" class="section">
+				<div class="site-inner">
+					<section id="most-info">
+						<h2 class="heading h-01" style="margin-top:0;">Наши дни</h2>
+						<div class="about-me-info">
+							<div>
+								<p class="copy-01">Жлобин - один из красивых городов Беларуси, стоящий на высоком берегу Днепра. </p>
+								<p class="copy-01">Сегодняшний Жлобин - это один из самых быстро развивающихся, перспективных городов республики с населением почти <strong>80 тысяч</strong> человек. </p>
+								<p class="copy-01">В городе работает <a href="bmz.html" class="bmz">Белорусский металлургический завод</a> - одно из крупнейших предприятий всей республики. Хорошей репутацией в республике и за её пределами пользуются фабрики <strong>искусственного меха</strong> и <strong>художественной инкрустации</strong>, производители мебели.</p>
+							</div>
+						</div>
+					</section>
+					<!-- higlights -->
+					<div class="minh">
+						<h1 class="heading h-01 mmm">Достопримечательности</h1>
+						<!-- КОЛОНКИ -->
+						<div class="columns">
+							<aside>
+								<h3 class="heading h-03"><a href="museum.html" class="inherit">Историко-краеведческий музей</a></h3>
+								<p class="copy-02">Музей включает в себя шесть экспозиционных залов. Экскурсия начинается с зала, посвящённого древней истории города.</p>
+							</aside>
+							<aside>
+								<h3 class="heading h-03"><a href="cor.html" class="inherit">Аквапарк и Ледовый дворец</a></h3>
+								<p class="copy-02">В аквапарке есть бассейны для детей и взрослых, сауны и зоны отдыха. По соседству с аквапарком находится Ледовый дворец.</p>
+							</aside>
+							<aside>
+								<h3 class="heading h-03"><a href="usadba.html" class="inherit">Усадьба М. Гатовского</a></h3>
+								<p class="copy-02">В нескольких километрах от Жлобина находится одна из красивейших усадеб Беларуси.</p>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- geography zhlobin -->
+			<section id="geography">
+				<h1 class="heading h-01">география</h1>
+				<div class="site-inner">
+					<p class="copy-01">Площадь Жлобина составляет всего <strong>28 км²</strong>. <em>Расположен он в Гомельском Полесье, в 93 км от Гомеля, 215 км от Минска</em>. Есть пристань на реке <strong>Днепр</strong>. Крупный железнодорожный узел (направления на Минск, Могилёв, Гомель, Калинковичи), ограничен с севера автомагистралью М5.</p>
+				</div>
+				<!-- GOOGLE MAP too hard -->
+				<div class="map-container"> <button type="button" class="triggerd btn">Подробнее</button>
+					<div class="map-responsive"> <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38512.703944047316!2d29.9857523166866!3d52.89363107545828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d6b7ea7c91e833%3A0x4075b74458cc0a63!2z0JbQu9C-0LHQuNC9!5e0!3m2!1sru!2sby!4v1696533984274!5m2!1sru!2sby" width="2560" height="850" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe> </div>
+				</div>
+			</section>
+			<!-- town-history -->
+			<section id="history">
+				<div class="site-inner">
+					<h1 class="heading h-01">История возникновения</h1>
+					<p class="copy-01">Во-первых, название «Жлобин» следует расшифровывать c топографической точки зрения. Потому что оно древнее.</p>
+					<p class="copy-02"><strong>Обратимся к «Словарю народных географических терминов». </strong>Географический термин «злобак, злобец» (от слова «лоб») обозначает «горка, возвышение». Согласные «з» и «ж» менялись. Таким образом, под названием Жлобин следует понимать "поселение на возвышении", а по отношению к нашему городу — «поселение на высоком берегу реки».</p>
+					<div class="line"></div>
+					<p class="copy-01">Также рассмотрим 2 версию названия, которая была построена на легендах</p>
+					<p class="copy-02">Изначально «Жлобин» называли «Злобин». Ведь в те времена Днепр был на высоком уровне. Из чего следует, что по местности было огромное количество грязи, которое не давало проехать участок людям. Некоторые остались в грязи на всегда. После чего это местечко начали называть «Злобин» - Злое место(плохое место). После чего согласные «з» и «ж» менялись. Наша 2 версия: Название «Жлобин» произошло от (Злого места)</p>
+				</div>
+			</section>
+			<!-- footer -->
+			<section id="page-footer">
+				<div class="social-links">
+					<!-- Ссылка на ВК.  --><a href="https://vk.com/fof4n" target="_blank"><i class="fab fa-vk"></i></a>
+					<!-- Ссылка на Instagram. --><a href="https://www.instagram.com/iva_ivanyshka/" target="_blank"><i class="fab fa-instagram"></i></a> </div>
+				<div>
+					<p class="copy-02">© 2023. Все права защищены.</p>
+					<p class="copy-02">By <a href="https://t.me/FoFanise" target="_blank" class="myLink">Иван Еленский</a></p>
+				</div>
+			</section>
+		</section>
+		<!-- scripts -->
+		<script src="script.js"></script>
+	</body>
+
+</html>
